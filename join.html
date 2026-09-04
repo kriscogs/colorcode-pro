@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Start your shop · Shopfloor Pros</title>
+<meta name="description" content="$75 a month for your first five months, then $159. Cancel any time." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html">Shop<em>floor</em> <small>PROS</small></a>
+    <nav class="nav">
+      <a href="demo.html" class="hide-sm">See it</a>
+      <a href="about.html" class="hide-sm">Why</a>
+      <a href="app.html">Sign in</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:34px">
+  <div class="wrap">
+    <div class="eyebrow">Pricing</div>
+    <h1>Seventy-five dollars a month<br>for your first five months.</h1>
+    <p class="lead">
+      Then $159. One price, everything included, however many people you put on it.
+      Cancel whenever — your data comes with you.
+    </p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:start">
+
+      <!-- ── what you get ── -->
+      <div>
+        <div class="card tint">
+          <div class="price">$75<small> /month for 5 months</small></div>
+          <p class="note" style="margin-top:6px">Then $159 a month. No setup fee, no contract.</p>
+          <ul class="ticks" style="margin-top:18px">
+            <li>Unlimited vehicles, jobs and photos</li>
+            <li>Everyone on your crew, at no extra cost</li>
+            <li>Body, mechanical, service and detail</li>
+            <li>Customer and dealership portals</li>
+            <li>Estimates, invoices and payment tracking</li>
+            <li>Reports and year-end contractor forms</li>
+            <li>Estimate import, QuickBooks, Carfax, Google reviews</li>
+            <li>Export everything, any time</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Worth saying plainly</h3>
+          <p class="note" style="margin-bottom:10px">
+            This is a young product built by one person. A few things it doesn't do yet:
+          </p>
+          <ul class="ticks" style="margin:0">
+            <li class="note">Texts and emails open your own apps rather than being sent for you</li>
+            <li class="note">Card payments from customers aren't processed in the app</li>
+            <li class="note">Live parts ordering isn't connected</li>
+          </ul>
+          <p class="note" style="margin:12px 0 0">
+            If any of those are what you need most, tell me before you pay and I'll be honest about
+            when it's coming.
+          </p>
+        </div>
+      </div>
+
+      <!-- ── the form ── -->
+      <div class="card" id="form">
+        <h2 style="font-size:28px">Start your shop</h2>
+        <p class="note">Two minutes. Card details are handled by Stripe — we never see them.</p>
+
+        <div id="step1">
+          <label class="lab">Shop name</label>
+          <input class="field" id="shop" placeholder="Blue J Automotive" autocomplete="organization" />
+
+          <div class="two">
+            <div>
+              <label class="lab">Town</label>
+              <input class="field" id="city" placeholder="Loudon, NH" autocomplete="address-level2" />
+            </div>
+            <div>
+              <label class="lab">Your name</label>
+              <input class="field" id="name" placeholder="Kristen Cogswell" autocomplete="name" />
+            </div>
+          </div>
+
+          <label class="lab">Email</label>
+          <input class="field" id="email" type="email" autocapitalize="none" autocomplete="email"
+                 placeholder="you@yourshop.com" />
+
+          <label class="lab">Password</label>
+          <input class="field" id="pass" type="password" autocomplete="new-password"
+                 placeholder="At least 8 characters" />
+
+          <label class="lab">Type it again</label>
+          <input class="field" id="pass2" type="password" autocomplete="new-password" />
+
+          <div id="err" class="err" style="display:none"></div>
+
+          <button class="btn solid" id="go" style="width:100%; margin-top:20px">
+            Create my shop
+          </button>
+
+          <p class="note" style="margin-top:14px">
+            You'll be taken to Stripe to enter your card. Nothing is charged until you finish there,
+            and you can look around the app first either way.
+          </p>
+          <p class="note">
+            By continuing you agree to the <a href="terms.html">terms</a> and
+            <a href="privacy.html">privacy policy</a>.
+          </p>
+        </div>
+
+        <div id="done" style="display:none">
+          <h3 style="margin-top:14px">Your shop is ready</h3>
+          <p id="doneMsg"></p>
+          <a class="btn solid" id="openApp" href="app.html" style="width:100%; text-align:center">
+            Open Shopfloor Pros
+          </a>
+          <p class="note" style="margin-top:14px">
+            You can start your subscription any time from <strong>Account</strong> inside the app.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="wash">
+  <div class="narrow">
+    <h2>Common questions</h2>
+    <div class="card" style="margin-top:20px">
+      <h3>What happens after five months?</h3>
+      <p style="margin:0">It becomes $159 a month automatically. You'll see the date in the app the whole time, and you can cancel before it if it isn't earning its keep.</p>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h3>What if I cancel?</h3>
+      <p style="margin:0">You keep access to the end of the month you've paid for, and you can export everything — jobs, clients, estimates, payments, photos — in one click. Your data is never held hostage.</p>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h3>Does it cost more for more people?</h3>
+      <p style="margin:0">No. Put your whole crew on it. The price is per shop.</p>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h3>Do my customers need an account?</h3>
+      <p style="margin:0">No. A private customer taps a link and sees their vehicle. Dealerships get a real login because they have several cars and several people.</p>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h3>Can I move my existing jobs in?</h3>
+      <p style="margin:0">Email me. If you can export from what you're using now, I'll do it for you.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html">Home</a>
+    <a href="demo.html">Features</a>
+    <a href="about.html">Why</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:support@shopfloorpros.com">support@shopfloorpros.com</a>
+    <span class="sp">© <span id="yr"></span> Shopfloor Pros LLC · New Hampshire</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const SUPABASE_URL      = 'https://tlzlsxouwmlpvjeshzqh.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsemxzeG91d21scHZqZXNoenFoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgyMDA5ODksImV4cCI6MjEwMzc3Njk4OX0.kJqxNcpXNE2WT8Qnkg0b0WEHGu45l0Um7KdzfpW3l6Y';
+
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+const $ = (id) => document.getElementById(id);
+const showErr = (msg) => { $('err').textContent = msg; $('err').style.display = 'block'; };
+const hideErr = () => { $('err').style.display = 'none'; };
+
+const friendly = (m) => {
+  if (/already registered|already been registered/i.test(m))
+    return "There's already an account on that email. Sign in instead, or use another address.";
+  if (/password/i.test(m) && /short|least/i.test(m)) return 'Passwords need at least 8 characters.';
+  if (/invalid.*email/i.test(m)) return "That email doesn't look right.";
+  return m;
+};
+
+$('go').addEventListener('click', async () => {
+  hideErr();
+
+  const shop  = $('shop').value.trim();
+  const city  = $('city').value.trim();
+  const name  = $('name').value.trim();
+  const email = $('email').value.trim();
+  const pass  = $('pass').value;
+  const pass2 = $('pass2').value;
+
+  if (!shop)  return showErr('What do you call the shop?');
+  if (!name)  return showErr('And your name?');
+  if (!email) return showErr('An email address, so you can get back in.');
+  if (pass.length < 8) return showErr('Passwords need at least 8 characters.');
+  if (pass !== pass2)  return showErr("Those two passwords don't match.");
+
+  const btn = $('go');
+  btn.disabled = true;
+  btn.textContent = 'Creating your shop…';
+
+  try {
+    // 1. the account
+    const { data: signUp, error: e1 } = await sb.auth.signUp({ email, password: pass });
+    if (e1) throw new Error(friendly(e1.message));
+    if (!signUp.session) {
+      throw new Error('Check your email to confirm the address, then sign in.');
+    }
+
+    // 2. the shop itself
+    btn.textContent = 'Setting things up…';
+    const { error: e2 } = await sb.rpc('create_shop_for_owner', {
+      shop_name: shop, owner_name: name, shop_city: city || null,
+    });
+    if (e2) throw new Error(e2.message);
+
+    // 3. straight to Stripe, if billing is switched on
+    btn.textContent = 'Opening secure checkout…';
+    try {
+      const { data, error } = await sb.functions.invoke('stripe-checkout', { body: {} });
+      if (!error && data && data.url) { window.location.href = data.url; return; }
+      throw new Error((data && data.error) || (error && error.message) || 'no checkout');
+    } catch (_) {
+      // Billing isn't live yet, or Stripe was unreachable. The shop exists
+      // either way, so let them in rather than leaving them stuck.
+      $('step1').style.display = 'none';
+      $('done').style.display = 'block';
+      $('doneMsg').textContent =
+        'We couldn\u2019t open checkout just now, but your shop is set up and ready. ' +
+        'You can start your subscription from Account inside the app whenever you like.';
+      return;
+    }
+  } catch (e) {
+    showErr(e.message);
+    btn.disabled = false;
+    btn.textContent = 'Create my shop';
+  }
+});
+
+// let Enter submit from any field
+['shop','city','name','email','pass','pass2'].forEach((id) => {
+  $(id).addEventListener('keydown', (e) => { if (e.key === 'Enter') $('go').click(); });
+});
+</script>
+</body>
+</html>
