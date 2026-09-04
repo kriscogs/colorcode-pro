@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /portal.html
+
+Sitemap: https://www.shopfloorpros.com/sitemap.xml

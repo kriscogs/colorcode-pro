@@ -1,0 +1,19 @@
+# Tools and local bits
+node_modules/
+verify.js
+*.log
+.DS_Store
+
+# Database structure — describes the whole schema, keep it private
+*.sql
+
+# App source, no need to serve it
+live.jsx
+
+# Edge Functions belong on Supabase, not on a web host
+supabase/
+
+# Documents, guides and anything personal
+*.md
+*.docx
+*.pdf
